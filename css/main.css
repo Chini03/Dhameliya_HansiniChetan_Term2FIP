@@ -1,31 +1,82 @@
-#account-icon {
+/* 
+    1. Header
+    2. Footer
+*/
+
+
+/* 1. Header */
+
+body {
+    font-family: "Aleo", serif;
+}
+
+header{
+    background: #F14557;
+}
+
+#headerWrap {
+    margin-top: 18px;
+}
+
+#accountIcon, #cartIcon, #searchIcon, #burgerIcon {
+    width: 52px;
+    height: 52px;
+}
+
+/* Nav Menu */
+
+#iconsLeft {
+    margin-left: 44px;
+}
+
+#mainNav {
+    display: inline;
+}
+
+#mainNav label img {
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}  
+
+#mainNav input, #menu{
+    display: none;
+}
+
+#mainNav input:checked ~ #menu {
     display: block;
-    width: 1000px;
-    height: 1000px;
 }
 
-#head {
-    width: 10px;
+#mainNav input:checked ~ label img {
+    transform: rotate(90deg);
 }
 
-header {
-    background: #000;
+#menu {
+    margin-top: 12px;
 }
 
-#accountIcon {
-    color: #fff;
-    width: 52px;
-    height: 52px;
-}
-
-#cartIcon {
-
-    width: 52px;
-    height: 52px;
-}
-
-#searchIcon {
-
-    width: 52px;
-    height: 52px;
-}
+#mainNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ #mainNav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 20px;
+ }
+ 
+ #mainNav ul li {
+    border-bottom: 1px solid #efefef;
+ }
+ 
+ #mainNav ul li:first-child {
+    border-top: 1px solid #efefef;
+ }
+ 
+ #mainNav ul li:last-child {
+    margin-bottom: 10px;
+ }
