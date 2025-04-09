@@ -29,11 +29,11 @@ video {
     justify-content: center;
 }
 
-header .grid-con {
+header .grid-con, footer .grid-con, #heroSection #heroCarMaster {
     grid-column: 2/3; 
     /* puts grid-con into the 2nd column of full-width-grid-con */
     grid-row: 1/1;
-    margin: 0, auto;
+    margin: 0 auto;
  }
 
 /* Mobile Grid */

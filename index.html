@@ -18,47 +18,13 @@
     <header  class="full-width-grid-con" >
         <div id="headerWrap" class="grid-con">
             <div class="col-start-1 col-span-2">
-                <?xml version="1.0" encoding="UTF-8"?>
-                <svg id="accountIcon" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 140.1 152.9">
-                <!-- Generator: Adobe Illustrator 29.4.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 152)  -->
-                <defs>
-                    <style>
-                    .st0 {
-                        fill: #fff;
-                    }
-                    </style>
-                </defs>
-                <path id="body" class="st0" d="M140.1,148.5C136.5,54.6,3.6,54.8,0,148.5c0,1.4,0,4,1.5,4.4h137c1.4,0,1.6-3.2,1.5-4.4ZM12.1,141.9c7.4-70.3,108.6-70.5,116,0H12.1Z"/>
-                <path id="head" class="st0" d="M66.8.2c-51.7,4.9-39.6,85.5,12.3,73.3C122.7,63.2,111.8-4,66.8.2ZM75.5,62.8c-39,5.4-41.5-48.9-7.6-51.7,33.7-2.8,37.6,47.5,7.6,51.7Z"/>
-                </svg>
+                <img id="accountIcon" src="images/accountIcon.svg" alt="Account Icon">
         
-                <?xml version="1.0" encoding="UTF-8"?>
-                <svg id="cartIcon" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 154 139.1">
-                <!-- Generator: Adobe Illustrator 29.4.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 152)  -->
-                <defs>
-                    <style>
-                    .st0 {
-                        fill: #f1f1f1;
-                    }
-                    </style>
-                </defs>
-                <path class="st0" d="M134,97H46.5c-2,0-2-7,0-7h85l22.5-72-113.5-2c-1.3,0-1.9-.5-2.3-1.7-.7-2-2.3-13.8-3.2-14.3H0v11h25.5l16.6,69.3c-16.1,9.3-6.9,30.9,10.9,27.7-1.3,1.8-3.6,2.1-5.5,3.9-11.5,10.8-2,29.7,13.6,26.6,12-2.4,15.8-16.4,8.5-25.6l-7.5-5h51c-.4,1.7-2.9,1.7-4.5,3-18.8,15.7,7.9,39.8,21.5,21.5,4.6-6.2,4.3-14.3-1-20l-7-4.5h12s0-11,0-11ZM41,27l98,2-15.1,49.9H53.1s-12.1-51.8-12.1-51.8ZM60.6,127.1c-4.5,3.6-9.2-3.7-6.4-6.8,4.1-4.6,11.4,2.8,6.4,6.8ZM114.3,126.7c-3.5-3.5,1.3-10.8,6.3-6.8,5,4-2.2,11-6.3,6.8Z"/>
-                </svg>
+                <img id="cartIcon" src="images/cartIcon.svg" alt="Cart Icon">
             </div>
     
             <div id="iconsLeft" class="col-start-3 col-span-2">
-                <?xml version="1.0" encoding="UTF-8"?>
-                <svg id="searchIcon" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 140.4 148">
-                <!-- Generator: Adobe Illustrator 29.4.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 152)  -->
-                <defs>
-                    <style>
-                    .st0 {
-                        fill: #f1f1f1;
-                    }
-                    </style>
-                </defs>
-                <path class="st0" d="M50.3.3c50.2-4.9,81.2,56.2,46.4,93.2l43.8,48-6.5,6.5-43.5-47.5c-15,9.3-29.3,13.8-47,10.1C-17.9,97.5-13.1,6.5,50.3.3ZM50.2,9.3C-14.3,16.7,2.1,116.6,66.5,101.5,123.1,88.2,107.8,2.7,50.2,9.3Z"/>
-                </svg>
+                <img id="searchIcon" src="images/searchIcon.svg" alt="Search Icon">
                 <nav id="mainNav">
                     <h2 class="hidden">Main Navigation</h2>
                     <input type="checkbox" id="menuToggle">
@@ -75,44 +41,48 @@
                 </nav>
             </div>
 
-            <div id="logo">
+            <div id="logo" class="col-start-1 col-span-2">
                 <a href="index.html"><img src="images/Wordmark - Textured.svg" alt="Dr. Nut Logo"></a>
             </div>
-            <button>View Shop</button>
+            <button class="col-start-3 col-span-2">View Shop</button>
     
         </div>
     </header>
     <main>
-        <section id="heroSection">
+        <section id="heroSection" class="full-width-grid-con">
             <h2 class="hidden">Hero Section</h2>
             <div id="heroCarMaster">
+                <button class="arrow left">&#10094;</button> <!-- Left Arrow -->
+
                 <div id="heroCar">
-                    <img src="images/mob_dn_hp_hero-01.jpg" alt="Image of bottles">
-                    <img src="images/mob_dn_hp_hero-02.jpg" alt="Image of bottles">
-                    <img src="images/mob_dn_hp_hero-03.jpg" alt="Image of bottles">
+                    <img class="content" src="images/mob_dn_hp_hero-01.jpg" alt="Image of bottles">
+                    <img class="content" src="images/mob_dn_hp_hero-02.jpg" alt="Image of bottles">
+                    <img class="content" src="images/mob_dn_hp_hero-03.jpg" alt="Image of bottles">
                 </div>
+
+                <button class="arrow right">&#10095;</button> <!-- Right Arrow -->
             </div>
         </section>
-        <section>
-            <h2 class="hidden" id="productSection">Frequently Bought</h2>
+        <section id="productSection">
+            <h2 class="hidden" >Frequently Bought</h2>
             <article>
                 <img src="images/mob_dn_pp_cs.jpg" alt="Image of Strawberry Classic Bottle">
-                <div>
+                <div class="productInfo">
                     <div>
                         <h3>Strawberry Classic</h3>
                         <p>Strawberry Flavored Cow’s Milk</p>
                     </div>
-                    <button>Learn more</button>    
+                    <button>Learn<br>More</button>    
                 </div>
             </article>
             <article>
                 <img src="images/mob_dn_pp_ac.jpg" alt="Image of Strawberry Classic Bottle">
-                <div>
+                <div class="productInfo">
                     <div>
                         <h3>Chocolate Nutty</h3>
-                        <p>Chocolate Flavored Almond milk </p>
+                        <p>Chocolate Flavored Almond Milk </p>
                     </div>
-                    <button>Learn more</button>    
+                    <button>Learn<br>More</button>    
                 </div>
             </article>
         </section>
@@ -120,36 +90,44 @@
             <h2 class="hidden">Check out our product trailer!</h2>
             <video src="images/video.mp4" type="video/mp4" controls></video>
         </section>
-        <section id="contactSection">
+        <section id="contact-section">
             <h2>Contact Us</h2>
-            <form>
-                <input name="fullName" type="text" placeholder="First & Last Name">
-                <input name="contactInfo" type="text" required placeholder="Phone number or Email">
-                <textarea name="msg" placeholder="Enter your questions, comments or concerns here..."></textarea>
-                <input name="submit" type="submit" value="Send">
+            <form class="grid-con">
+                <label class="col-start-1 col-span-full" for="name">Name:</label>
+                <input class="col-start-1 col-span-full" type="text" name="name" id="name" placeholder="e.g John Doe">
+
+                <label class="col-start-1 col-span-full" for="email">Email:</label>
+                <input class="col-start-1 col-span-full" type="email" name="email" id="email" placeholder="e.g name@gmail.com">
+
+                <label class="col-start-1 col-span-full" for="message">Message:</label>
+                <input class="col-start-1 col-span-full" type="text" name="message" id="message" placeholder="Type Here..">
+
+                <input class="col-start-3 col-span-2 l-col-start-8 l-col-span-4" type="submit" value="Submit">
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="full-width-grid-con" id="footer">
         <h2 class="hidden">Footer Content</h2>
-        <div>
-            <div id="footerLogo">
-                <a href="index.html"><img src="images/Wordmark - Textured.svg" alt="Dr. Nut Logo"></a>
+        <div class="grid-con col-span-full">
+            <div id="footerTopRow" class="col-start-1 col-span-4">
+                <div id="footerLogo">
+                    <a href="index.html"><img src="images/Icon - Tertured.svg" alt="Dr. Nut Logo"></a>
+                </div>
+                <nav>
+                    <h3 class="hidden">Footer Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <h3 class="hidden">Footer Navigation</h3>
+            <div id="footerBottomRow" class="col-start-1 col-span-4">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">copyright Dr. Nut</a></li>
                 </ul>
-            </nav>
-        </div>
-        <div>
-            <ul>
-                <li><a href="#"></a>Privacy Policy</li>
-                <li><a href="#"></a>copyright Dr. Nut</li>
-            </ul>
+            </div>
         </div>
     </footer>
 </body>
