@@ -1,0 +1,368 @@
+/* 
+    
+        1. Header
+        2. Footer
+    Home Page
+        3. Hero Section
+        4. Product Section
+        5. Video Section
+        6. Contact Section
+    Shop Page
+        7. List Section
+*/
+
+
+/* 1. Header */
+
+body {
+    font-family: "Aleo", serif;
+}
+
+header{
+    background: #F14557;
+}
+
+#headerWrap {
+    margin-top: 18px;
+}
+
+#accountIcon, #cartIcon, #searchIcon, #burgerIcon {
+    width: 52px;
+    height: 52px;
+}
+
+#cartIcon, #burgerIcon {
+    margin-left: 16px;
+}
+
+#logo img {
+    width: 194px;
+    height: 88px;
+    margin-top: 26px;
+}
+
+#headerWrap button {
+    width: 120px;
+    height: 48px;
+    border: none;
+    font-family: "Chewy", system-ui;
+    color: #F14557;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    border-radius: 4px;
+    margin: 48px 0 0 45px;
+}
+
+/* Nav Menu */
+
+#iconsLeft {
+    margin-left: 24px;
+}
+
+#mainNav {
+    display: inline;
+}
+
+#mainNav label img {
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}  
+
+#mainNav input, #menu{
+    display: none;
+}
+
+#mainNav input:checked ~ #menu {
+    display: block;
+    
+}
+
+#mainNav input:checked ~ label img {
+    transform: rotate(90deg);
+}
+
+#menu {
+    margin-top: 12px;
+}
+
+#mainNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ #mainNav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 20px;
+ }
+ 
+ #mainNav ul li {
+    border-bottom: 1px solid #efefef;
+ }
+ 
+ #mainNav ul li:first-child {
+    border-top: 1px solid #efefef;
+ }
+ 
+ #mainNav ul li:last-child {
+    margin-bottom: 10px;
+ }
+
+ /* Footer */
+
+footer {
+    background-color: #F14557;
+    text-align: center;
+    
+ }
+
+#footer {margin-top: 48px;}
+
+#footerTopRow {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#footerTopRow {
+    margin-top: 48px;
+    margin-bottom: 44px;
+    font-size: 18px;
+}
+
+#footerTopRow nav {
+    margin-left: 101px;
+}
+
+#footerBottomRow {
+    margin-bottom: 48px;
+    font-size: 11px;
+}
+
+#footerLogo img {
+    width: 124px;
+    height: 124px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footerTopRow a, #footerBottomRow ul li:nth-child(2) a{
+    text-decoration: none;
+}
+
+footer ul li a {
+    color: #f1f1f1;
+}
+
+#footerTopRow ul li:nth-child(2) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#footerBottomRow ul li a {
+    text-align: center;
+}
+
+#footerBottomRow ul li:nth-child(2) {
+    margin-top: 16px;
+}
+
+/* 3. Hero Section */
+
+#heroCarMaster {
+    position: 'relative';
+    overflow: hidden; 
+    width: 100%;
+    max-width: 412px;
+    height: 360px;
+    margin: 0 auto 40px auto;
+}
+
+#heroCar {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.content {
+    min-width: 100%;
+    text-align: center;
+}
+
+.arrow {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: #DDD6D7;
+    color: #F14557;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-color: #DDD6D7;
+}
+
+.arrow.left {
+    left: 1px;
+}
+.arrow.right {
+    right: 1px;
+}
+
+/* 4. Product Section */
+
+#productSection {
+    padding: 0 16px;
+}
+
+#productSection article {
+    background-color: #B2A6A7;
+    padding: 29px 0 42px 0;
+    text-align: center ;
+    border-radius: 8px;
+    margin: 24px auto 0 auto;
+    width: 380px;
+}
+
+.productInfo {
+    display: flex;
+    margin: 24px auto 0 auto;
+    justify-content: space-between;
+    width: 348px;
+}
+
+.productInfo div {
+    text-align: left;
+    color: #f1f1f1;
+    font-size: 18px;
+}
+
+.productInfo div p{
+  margin-top: 10px;
+  font-family: "Parkinsans", sans-serif;
+  font-size: 13px;
+}
+
+.productInfo button {
+    width: 80px;
+    height: 80px;
+    border: none;
+    font-family: "Chewy", system-ui;
+    color: #F14557;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+/* 5. Video Section */
+
+#videoSection {
+    margin: 48px 0;
+}
+
+/* 6. Contact Section */
+
+#contact-section h2{
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 16px;
+    
+}
+
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 14px;
+    /* margin: 16px auto 8px auto; */
+    padding-left: 16px;
+}
+
+#name, #email {
+    width: 380px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 8px auto 16px auto;
+    border: 1px solid #453B3C;
+    color: #A19596;
+    padding-left: 8px;
+}
+
+#message {
+    width: 380px;
+    height: 120px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 8px auto 16px auto;
+    border: 1px solid #453B3C;
+    color: #A19596;
+    padding-left: 8px;
+}
+
+input[type="submit"] {
+    font-size: 14px;
+    padding: 20px 40px;
+    background-color: #F14557;
+    color: #F1F1F1;
+    border-radius: 4px;
+    margin: 24px 0 0 53px;
+    font-family: "chewy", system-ui;
+    border: none;
+}
+
+
+/* 7. List Section */
+
+#listSection {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+#listSection nav {
+    width: 180px;
+    text-align: center;
+}
+
+#listSection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ #listSection ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #A19596;
+    text-decoration: none;
+    font-size: 20px;
+ }
+ 
+ #listSection ul li {
+    border-bottom: 1px solid #A19596;
+    padding: 40px 0;
+ }
+ 
+ #listSection {
+    margin-bottom: 88px;
+    margin-top: 40px;
+ }
+ 
+ #listSection ul li:nth-child(2) a {
+    color: #453B3C;
+ }
