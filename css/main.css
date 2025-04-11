@@ -292,6 +292,7 @@ footer ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .productInfo {
@@ -311,6 +312,18 @@ footer ul li a {
     width: 326px;
     height: 240px;
     background-image: url("../images/mob_dn_pp_ac.jpg");
+}
+
+#productImage_3 {
+    width: 326px;
+    height: 240px;
+    background-image: url("../images/mob_dn_pp_cc.jpg");
+}
+
+#productImage_4 {
+    width: 326px;
+    height: 240px;
+    background-image: url("../images/mob_dn_pp_as.jpg");
 }
 
 .productInfo div {
@@ -338,6 +351,7 @@ footer ul li a {
 @media screen and (min-width: 1200px) {
     #productSection {
         display: flex;
+        justify-content: space-around;
     }
 
     #productSection article {
@@ -364,6 +378,20 @@ footer ul li a {
         width: 524px;
         height: 240px;
         background-image: url("../images/desk_dn_pp_ac.jpg");
+        background-repeat: no-repeat;
+    }
+
+    #productImage_3 {
+        width: 524px;
+        height: 240px;
+        background-image: url("../images/desk_dn_pp_cc.jpg");
+        background-repeat: no-repeat;
+    }
+    
+    #productImage_4 {
+        width: 524px;
+        height: 240px;
+        background-image: url("../images/desk_dn_pp_as.jpg");
         background-repeat: no-repeat;
     }
 
@@ -489,28 +517,28 @@ input[type="submit"] {
     margin: 0;
  }
  
- #listSection ul li a {
+#listSection ul li a {
     display: block;
     padding: 10px 0 10px 0;
     text-align: center;
     color: #A19596;
     text-decoration: none;
     font-size: 20px;
- }
+}
  
- #listSection ul li {
+#listSection ul li {
     border-bottom: 1px solid #A19596;
     padding: 40px 0;
- }
+}
  
- #listSection {
+#listSection {
     margin-bottom: 88px;
     margin-top: 40px;
- }
+}
  
- #listSection ul li:nth-child(2) a {
+ #listSection ul li:nth-child(1) a {
     color: #453B3C;
- }
+}
 
 /* 8. About Section */
 
