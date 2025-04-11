@@ -55,9 +55,12 @@
                 <button class="arrow left">&#10094;</button> <!-- Left Arrow -->
 
                 <div id="heroCar">
-                    <img class="content" src="images/mob_dn_hp_hero-01.jpg" alt="Image of bottles">
-                    <img class="content" src="images/mob_dn_hp_hero-02.jpg" alt="Image of bottles">
-                    <img class="content" src="images/mob_dn_hp_hero-03.jpg" alt="Image of bottles">
+                    <!-- <img class="content" src="images/mob_dn_hp_hero-01.jpg" alt="Image of bottles"> -->
+                    <div class="content" id="hero_1"></div>
+                    <!-- <img class="content" src="images/mob_dn_hp_hero-02.jpg" alt="Image of bottles"> -->
+                    <div class="content" id="hero_2"></div>
+                    <!-- <img class="content" src="images/mob_dn_hp_hero-03.jpg" alt="Image of bottles"> -->
+                    <div class="content" id="hero_3"></div>
                 </div>
 
                 <button class="arrow right">&#10095;</button> <!-- Right Arrow -->
@@ -66,23 +69,25 @@
         <section id="productSection">
             <h2 class="hidden" >Frequently Bought</h2>
             <article>
-                <img src="images/mob_dn_pp_cs.jpg" alt="Image of Strawberry Classic Bottle">
+                <!-- <img src="images/mob_dn_pp_cs.jpg" alt="Image of Strawberry Classic Bottle"> -->
+                <div id="productImage_1"></div>
                 <div class="productInfo">
                     <div>
                         <h3>Strawberry Classic</h3>
                         <p>Strawberry Flavored Cow’s Milk</p>
                     </div>
-                    <button>Learn<br>More</button>    
+                    <button>Learn More</button>    
                 </div>
             </article>
             <article>
-                <img src="images/mob_dn_pp_ac.jpg" alt="Image of Strawberry Classic Bottle">
+                <!-- <img src="images/mob_dn_pp_ac.jpg" alt="Image of Strawberry Classic Bottle"> -->
+                <div id="productImage_2"></div>
                 <div class="productInfo">
                     <div>
                         <h3>Chocolate Nutty</h3>
                         <p>Chocolate Flavored Almond Milk </p>
                     </div>
-                    <button>Learn<br>More</button>    
+                    <button>Learn More</button>    
                 </div>
             </article>
         </section>
@@ -93,16 +98,16 @@
         <section id="contact-section">
             <h2>Contact Us</h2>
             <form class="grid-con">
-                <label class="col-start-1 col-span-full" for="name">Name:</label>
-                <input class="col-start-1 col-span-full" type="text" name="name" id="name" placeholder="e.g John Doe">
+                <label class="col-start-1 col-span-full l-col-start-4 l-col-span-1" for="name">Name:</label>
+                <input class="col-start-1 col-span-full l-col-start-4 l-col-span-6" type="text" name="name" id="name" placeholder="e.g John Doe">
 
-                <label class="col-start-1 col-span-full" for="email">Email:</label>
-                <input class="col-start-1 col-span-full" type="email" name="email" id="email" placeholder="e.g name@gmail.com">
+                <label class="col-start-1 col-span-full l-col-start-4 l-col-span-1" for="email">Email:</label>
+                <input class="col-start-1 col-span-full l-col-start-4 l-col-span-6" type="email" name="email" id="email" placeholder="e.g name@gmail.com">
 
-                <label class="col-start-1 col-span-full" for="message">Message:</label>
-                <input class="col-start-1 col-span-full" type="text" name="message" id="message" placeholder="Type Here..">
+                <label class="col-start-1 col-span-full l-col-start-4 l-col-span-1" for="message">Message:</label>
+                <input class="col-start-1 col-span-full l-col-start-4 l-col-span-6" type="text" name="message" id="message" placeholder="Type Here..">
 
-                <input class="col-start-3 col-span-2 l-col-start-8 l-col-span-4" type="submit" value="Submit">
+                <input class="col-start-3 col-span-2 l-col-start-8 l-col-span-2" type="submit" value="Submit">
             </form>
         </section>
     </main>
