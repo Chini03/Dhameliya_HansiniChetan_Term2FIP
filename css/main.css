@@ -64,6 +64,9 @@ header{
         margin-top: 40px;
     }
     
+    #headerWrap button {
+        font-size: 18px;
+    }
 }
 
 /* Nav Menu */
@@ -209,9 +212,54 @@ footer ul li a {
     text-align: center;
 }
 
+#hero_1 {
+    background-image: url("../images/mob_dn_hp_hero-01.jpg");
+    background-repeat: no-repeat;
+    height: 360px;
+}
+
+#hero_2 {
+    background-image: url("../images/mob_dn_hp_hero-02.jpg");
+    background-repeat: no-repeat;
+    height: 360px;
+}
+
+#hero_3 {
+    background-image: url("../images/mob_dn_hp_hero-03.jpg");
+    background-repeat: no-repeat;
+    height: 360px;
+}
+
+@media screen and (min-width: 1200px) {
+
+    #heroCarMaster {
+        max-width: 1200px;
+        height: 400px;
+    }
+
+    #hero_1 {
+        background-image: url("../images/desk_dn_hp_hero-01.jpg");
+        height: 400px;
+        background-repeat: no-repeat;
+    }
+    
+    #hero_2 {
+        background-image: url("../images/desk_dn_hp_hero-02.jpg");
+        height: 400px;
+        background-repeat: no-repeat;
+    }
+    
+    #hero_3 {
+        background-image: url("../images/desk_dn_hp_hero-03.jpg");
+        height: 400px;
+        background-repeat: no-repeat;
+    }
+
+}
+
 .arrow {
     position: absolute;
-    top: 40%;
+    top: 50%;
     transform: translateY(-50%);
     background-color: #DDD6D7;
     color: #F14557;
@@ -240,14 +288,29 @@ footer ul li a {
     text-align: center ;
     border-radius: 8px;
     margin: 24px auto 0 auto;
-    width: 380px;
+    width: 358px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .productInfo {
     display: flex;
-    margin: 24px auto 0 auto;
+    margin: 24px 16px 0 16px;
     justify-content: space-between;
-    width: 348px;
+    width: 326px;
+}
+
+#productImage_1 {
+    width: 326px;
+    height: 240px;
+    background-image: url("../images/mob_dn_pp_cs.jpg");
+}
+
+#productImage_2 {
+    width: 326px;
+    height: 240px;
+    background-image: url("../images/mob_dn_pp_ac.jpg");
 }
 
 .productInfo div {
@@ -272,6 +335,59 @@ footer ul li a {
     font-size: 16px;
     border-radius: 4px;
 }
+@media screen and (min-width: 1200px) {
+    #productSection {
+        display: flex;
+    }
+
+    #productSection article {
+        padding: 29px 0 42px 0;
+        width: 574px;
+    }
+
+    .productInfo div {
+        font-size: 21px;
+    }
+    
+    .productInfo div p{
+      font-size: 16px;
+    }
+
+    #productImage_1 {
+        width: 524px;
+        height: 240px;
+        background-image: url("../images/desk_dn_pp_cs.jpg");
+        background-repeat: no-repeat;
+    }
+    
+    #productImage_2 {
+        width: 524px;
+        height: 240px;
+        background-image: url("../images/desk_dn_pp_ac.jpg");
+        background-repeat: no-repeat;
+    }
+
+    .productInfo {
+        display: flex;
+        margin: 24px 16px 0 16px;
+        justify-content: space-between;
+        width: 524px;
+    }
+
+    .productInfo div {
+        font-size: 21px;
+    }
+    
+    .productInfo div p{
+      font-size: 16px;
+    }
+    
+    .productInfo button {
+        width: 178px;
+        height: 64px;
+        font-size: 18px;
+    }
+}
 
 /* 5. Video Section */
 
@@ -294,12 +410,13 @@ form {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    font-family: "Aleo", serif;
 }
 
 label {
     font-size: 14px;
     /* margin: 16px auto 8px auto; */
-    padding-left: 16px;
+    /* padding-left: 16px; */
 }
 
 #name, #email {
@@ -311,7 +428,10 @@ label {
     border: 1px solid #453B3C;
     color: #A19596;
     padding-left: 8px;
+    font-family: "Aleo", serif;
 }
+
+
 
 #message {
     width: 380px;
@@ -322,6 +442,18 @@ label {
     border: 1px solid #453B3C;
     color: #A19596;
     padding-left: 8px;
+    font-family: "Aleo", serif;
+}
+
+@media screen and (min-width: 1200px) {
+    #name, #email, #message {
+        width: 574px;
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 18px;
+    }
 }
 
 input[type="submit"] {
@@ -330,7 +462,7 @@ input[type="submit"] {
     background-color: #F14557;
     color: #F1F1F1;
     border-radius: 4px;
-    margin: 24px 0 0 53px;
+    margin: 24px 0 0 0;
     font-family: "chewy", system-ui;
     border: none;
 }
