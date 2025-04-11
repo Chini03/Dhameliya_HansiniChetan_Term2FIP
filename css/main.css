@@ -543,9 +543,19 @@ input[type="submit"] {
 /* 8. About Section */
 
 
-#mainWrapper img {
+#image_top, #image_bottom {
     border-radius: 8px;
     margin-top: 80px;
+}
+
+#image_bottom {
+    background-image: url("../images/mob_dn_ap_bottom.jpg");
+    background-repeat: no-repeat;
+}
+
+#image_top {
+    background-image: url("../images/mob_dn_ap_top.jpg");
+    background-repeat: no-repeat;
 }
 
 #mainWrapper h2{
@@ -575,6 +585,37 @@ input[type="submit"] {
 
 #mainWrapper p:nth-of-type(3), #mainWrapper h3:nth-of-type(3) {
     text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+    #image_bottom {
+        background-image: url("../images/desk_dn_ap_bottom.jpg");
+        background-repeat: no-repeat;
+        height: 380px;
+    }
+    
+    #image_top {
+        background-image: url("../images/desk_dn_ap_top.jpg");
+        background-repeat: no-repeat;
+        height: 380px;
+    }
+    
+    #mainWrapper h2{
+        margin-top: 430px;
+        font-size: 32px;
+    }
+    
+    #mainWrapper h3 {
+        font-size: 24px;
+    }
+    
+    #mainWrapper p {
+        font-size: 16px;
+    }
+
+    #mainWrapper h3:nth-of-type(2) {
+        margin-top: 400px;
+    }
 }
 
  
