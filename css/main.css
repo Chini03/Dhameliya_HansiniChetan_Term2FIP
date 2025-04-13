@@ -56,6 +56,20 @@ header{
     margin: 48px 0 0 45px;
 }
 
+#iconsRight {
+    width: fit-content;
+}
+
+@media screen and (min-width: 768px) {
+    #iconRight, #iconsLeft {
+        grid-row: 1/1;
+    }
+    #iconsLeft, #headerWrap div:first-child {
+        margin-top: 40px;
+    }
+    
+}
+
 @media screen and (min-width: 1200px) {
     #headerWrap button, #logo, #iconsLeft {
         grid-row: 1/1;
@@ -228,6 +242,33 @@ footer ul li a {
     background-image: url("../images/mob_dn_hp_hero-03.jpg");
     background-repeat: no-repeat;
     height: 360px;
+}
+
+@media screen and (min-width: 768px) {
+
+    #heroCarMaster {
+        max-width: 800px;
+        height: 400px;
+    }
+
+    #hero_1 {
+        background-image: url("../images/tab_dn_hp_hero-01.jpg");
+        height: 400px;
+        background-repeat: no-repeat;
+    }
+    
+    #hero_2 {
+        background-image: url("../images/tab_dn_hp_hero-02.jpg");
+        height: 400px;
+        background-repeat: no-repeat;
+    }
+    
+    #hero_3 {
+        background-image: url("../images/tab_dn_hp_hero-03.jpg");
+        height: 400px;
+        background-repeat: no-repeat;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -538,6 +579,12 @@ input[type="submit"] {
  
  #listSection ul li:nth-child(1) a {
     color: #453B3C;
+}
+
+@media screen and (min-width: 1200px) {
+    #listSection nav {
+        width: 970px;
+    }
 }
 
 /* 8. About Section */
