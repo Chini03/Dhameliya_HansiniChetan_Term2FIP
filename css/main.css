@@ -643,6 +643,37 @@ input[type="submit"] {
     text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+    #image_bottom {
+        background-image: url("../images/tab_dn_ap_bottom.jpg");
+        background-repeat: no-repeat;
+        height: 238px;
+    }
+    
+    #image_top {
+        background-image: url("../images/tab_dn_ap_top.jpg");
+        background-repeat: no-repeat;
+        height: 238px;
+    }
+    
+    #mainWrapper h2{
+        margin-top: 290px;
+        font-size: 32px;
+    }
+    
+    #mainWrapper h3 {
+        font-size: 24px;
+    }
+    
+    #mainWrapper p {
+        font-size: 16px;
+    }
+
+    #mainWrapper h3:nth-of-type(2) {
+        margin-top: 270px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     #image_bottom {
         background-image: url("../images/desk_dn_ap_bottom.jpg");
