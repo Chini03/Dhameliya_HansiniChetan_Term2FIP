@@ -68,6 +68,9 @@ header{
         margin-top: 40px;
     }
     
+    #headerWrap button {
+        margin-left: 0;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -579,6 +582,12 @@ input[type="submit"] {
  
  #listSection ul li:nth-child(1) a {
     color: #453B3C;
+}
+
+@media screen and (min-width: 768px) {
+    #listSection nav {
+        width: 610px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
