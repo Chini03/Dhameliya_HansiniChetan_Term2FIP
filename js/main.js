@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Light Box Functionality
+
 // Define an object where each key-value pair links a button ID to its corresponding lightbox ID
 const lightBoxController = {
     btn1: 'lightBox1',
@@ -37,4 +40,4 @@ for (const [btnId, boxId] of Object.entries(lightBoxController)) {
 
 };
 
-
+});
