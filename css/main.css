@@ -229,7 +229,7 @@ footer ul li a {
 /* 3. Hero Section */
 
 #heroCarMaster {
-    position: 'relative';
+    position: relative;
     overflow: hidden; 
     width: 100%;
     max-width: 412px;
@@ -552,7 +552,7 @@ label {
 }
 
 #name, #email {
-    width: 380px;
+    width: 100%;
     height: 48px;
     border-radius: 8px;
     font-size: 14px;
@@ -566,7 +566,7 @@ label {
 
 
 #message {
-    width: 380px;
+    width: 100%;
     height: 120px;
     border-radius: 8px;
     font-size: 14px;
@@ -666,7 +666,7 @@ input[type="submit"] {
 
 #image_bottom {
     background-image: url("../images/mob_dn_ap_bottom.jpg");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
 }
 
 #image_top {
