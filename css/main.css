@@ -112,7 +112,6 @@ header a {
 
 #mainNav input:checked ~ #menu {
     display: block;
-    
 }
 
 #mainNav input:checked ~ label img {
@@ -139,15 +138,29 @@ header a {
  }
  
  #mainNav ul li {
-    border-bottom: 1px solid #efefef;
+    border-bottom: 2px solid #efefef;
  }
  
  #mainNav ul li:first-child {
-    border-top: 1px solid #efefef;
+    border-top: 2px solid #efefef;
+ }
+
+ #mainNav ul li {
+    padding: 16px 0;
  }
  
  #mainNav ul li:last-child {
     margin-bottom: 10px;
+ }
+
+ @media screen and (min-width: 1200px) {
+    #mainNav ul li:last-child {
+        margin-bottom: 24px;
+    }
+
+    #mainNav ul li {
+        width: 300px;
+     }
  }
 
  /* Footer */
