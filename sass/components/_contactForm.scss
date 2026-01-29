@@ -1,0 +1,82 @@
+#contact-section h2{
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 16px;
+    
+}
+
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: "Aleo", serif;
+}
+
+label {
+    font-size: 14px;
+    /* margin: 16px auto 8px auto; */
+    /* padding-left: 16px; */
+}
+
+#name, #email {
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 8px auto 16px auto;
+    border: 1px solid #453B3C;
+    color: #A19596;
+    padding-left: 8px;
+    font-family: "Aleo", serif;
+}
+
+
+
+#message {
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 8px auto 16px auto;
+    border: 1px solid #453B3C;
+    color: #A19596;
+    padding-left: 8px;
+    font-family: "Aleo", serif;
+}
+
+@media screen and (min-width: 1200px) {
+    #name, #email, #message {
+        width: 574px;
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+}
+
+input[type="submit"] {
+    font-size: 14px;
+    padding: 20px 40px;
+    background-color: #F14557;
+    color: #F1F1F1;
+    border-radius: 4px;
+    margin: 24px 0 0 0;
+    font-family: "chewy", system-ui;
+    border: none;
+}
+
+// validation 
+    #name:invalid:not(:placeholder-shown), #email:invalid:not(:placeholder-shown), #message:invalid:not(:placeholder-shown){
+        border: .2em solid red;
+    }
+
+    #name:valid, #email:valid, #message:valid {
+        border: .2em solid green;
+    }
+
+    input:focus {
+        outline: none;
+    }

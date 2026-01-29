@@ -1,0 +1,65 @@
+/* ___________________________________________
+
+    Guide
+___________________________________________ */
+
+/*  
+    00. List Section
+
+*/   
+
+/* ------------- List Section -------------*/
+
+#listSection {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+#listSection nav {
+    width: 180px;
+    text-align: center;
+}
+
+#listSection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+#listSection ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #A19596;
+    text-decoration: none;
+    font-size: 20px;
+}
+ 
+#listSection ul li {
+    border-bottom: 1px solid #A19596;
+    padding: 40px 0;
+}
+ 
+#listSection {
+    margin-bottom: 88px;
+    margin-top: 40px;
+}
+ 
+ #listSection ul li:nth-child(1) a {
+    color: #453B3C;
+}
+
+@media screen and (min-width: 768px) {
+    #listSection nav {
+        width: 610px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #listSection nav {
+        width: 970px;
+    }
+}
