@@ -1,0 +1,317 @@
+/* ___________________________________________
+
+    Guide
+___________________________________________ */
+
+/*  
+    00. Hero Section
+    01. Product Section
+    02. List Section
+    03. Video Section
+
+*/    
+
+/* ------------- Hero Section -------------*/
+
+#heroCarMaster {
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+    max-width: 412px;
+    height: 360px;
+    margin: 0 auto 40px auto;
+}
+
+#heroCar {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.content {
+    min-width: 100%;
+    text-align: center;
+}
+
+#hero_1 {
+    background-image: url("../images/mob_dn_hp_hero-01.jpg");
+    background-repeat: no-repeat;
+    height: 360px;
+}
+
+#hero_2 {
+    background-image: url("../images/mob_dn_hp_hero-02.jpg");
+    background-repeat: no-repeat;
+    height: 360px;
+}
+
+#hero_3 {
+    background-image: url("../images/mob_dn_hp_hero-03.jpg");
+    background-repeat: no-repeat;
+    height: 360px;
+}
+
+@media screen and (min-width: 768px) {
+
+    #heroCarMaster {
+        max-width: 800px;
+        height: 400px;
+    }
+
+    #hero_1 {
+        background-image: url("../images/tab_dn_hp_hero-01.jpg");
+        height: 400px;
+        background-repeat: no-repeat;
+    }
+    
+    #hero_2 {
+        background-image: url("../images/tab_dn_hp_hero-02.jpg");
+        height: 400px;
+        background-repeat: no-repeat;
+    }
+    
+    #hero_3 {
+        background-image: url("../images/tab_dn_hp_hero-03.jpg");
+        height: 400px;
+        background-repeat: no-repeat;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    #heroCarMaster {
+        max-width: 1200px;
+        height: 400px;
+    }
+
+    #hero_1 {
+        background-image: url("../images/desk_dn_hp_hero-01.jpg");
+        height: 400px;
+        background-repeat: no-repeat;
+    }
+    
+    #hero_2 {
+        background-image: url("../images/desk_dn_hp_hero-02.jpg");
+        height: 400px;
+        background-repeat: no-repeat;
+    }
+    
+    #hero_3 {
+        background-image: url("../images/desk_dn_hp_hero-03.jpg");
+        height: 400px;
+        background-repeat: no-repeat;
+    }
+
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #DDD6D7;
+    color: #F14557;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-color: #DDD6D7;
+}
+
+.arrow.left {
+    left: 1px;
+}
+.arrow.right {
+    right: 1px;
+}
+
+/* ------------- Product Section -------------*/
+
+#productSection {
+    padding: 0 16px;
+}
+
+#productSection article {
+    background-color: #B2A6A7;
+    padding: 29px 0 42px 0;
+    text-align: center ;
+    border-radius: 8px;
+    margin: 24px auto 0 auto;
+    width: 358px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.productInfo {
+    display: flex;
+    margin: 24px 16px 0 16px;
+    justify-content: space-between;
+    width: 326px;
+}
+
+#productImage_1 {
+    width: 326px;
+    height: 240px;
+    background-image: url("../images/mob_dn_pp_cs.jpg");
+}
+
+#productImage_2 {
+    width: 326px;
+    height: 240px;
+    background-image: url("../images/mob_dn_pp_ac.jpg");
+}
+
+#productImage_3 {
+    width: 326px;
+    height: 240px;
+    background-image: url("../images/mob_dn_pp_cc.jpg");
+}
+
+#productImage_4 {
+    width: 326px;
+    height: 240px;
+    background-image: url("../images/mob_dn_pp_as.jpg");
+}
+
+.productInfo div {
+    text-align: left;
+    color: #f1f1f1;
+    font-size: 18px;
+}
+
+.productInfo div p{
+  margin-top: 10px;
+  font-family: "Parkinsans", sans-serif;
+  font-size: 13px;
+}
+
+.productInfo button {
+    width: 80px;
+    height: 80px;
+    border: none;
+    font-family: "Chewy", system-ui;
+    color: #F14557;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.lightBox {
+    position: relative;
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    padding: 20px;
+    background: #f1f1f1;
+    border: 2px solid #F14557;
+    box-shadow: 0 0 15px #F14557;
+    z-index: 1000;
+    border-radius: 16px;
+    font-family: "Chewy", system-ui;
+    font-size: 18px;
+    color: #F14557;
+    text-align: center;
+}
+
+.lightBox p {
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.lightBox button {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    font-family: "Chewy", system-ui;
+    color: #f1f1f1;
+    background-color: #F14557;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+    #productSection {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #productSection article {
+        padding: 29px 0 42px 0;
+        width: 574px;
+    }
+
+    .productInfo div {
+        font-size: 21px;
+    }
+    
+    .productInfo div p{
+      font-size: 16px;
+    }
+
+    #productImage_1 {
+        width: 524px;
+        height: 240px;
+        background-image: url("../images/desk_dn_pp_cs.jpg");
+        background-repeat: no-repeat;
+    }
+    
+    #productImage_2 {
+        width: 524px;
+        height: 240px;
+        background-image: url("../images/desk_dn_pp_ac.jpg");
+        background-repeat: no-repeat;
+    }
+
+    #productImage_3 {
+        width: 524px;
+        height: 240px;
+        background-image: url("../images/desk_dn_pp_cc.jpg");
+        background-repeat: no-repeat;
+    }
+    
+    #productImage_4 {
+        width: 524px;
+        height: 240px;
+        background-image: url("../images/desk_dn_pp_as.jpg");
+        background-repeat: no-repeat;
+    }
+
+    .productInfo {
+        display: flex;
+        margin: 24px 16px 0 16px;
+        justify-content: space-between;
+        width: 524px;
+    }
+
+    .productInfo div {
+        font-size: 21px;
+    }
+    
+    .productInfo div p{
+      font-size: 16px;
+    }
+    
+    .productInfo button {
+        width: 178px;
+        height: 64px;
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+/* ------------- Video Section -------------*/
+
+#videoSection {
+    margin: 48px 0;
+}

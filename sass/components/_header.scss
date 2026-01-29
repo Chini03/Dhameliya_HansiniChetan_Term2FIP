@@ -1,0 +1,73 @@
+body {
+    font-family: "Aleo", serif;
+}
+
+header{
+    background: #F14557;
+}
+
+header a {
+    text-decoration: none;
+    color: #F14557;
+}
+
+#headerWrap {
+    margin-top: 18px;
+}
+
+#accountIcon, #cartIcon, #searchIcon, #burgerIcon {
+    width: 52px;
+    height: 52px;
+}
+
+#cartIcon, #burgerIcon {
+    margin-left: 16px;
+}
+
+#logo img {
+    width: 194px;
+    height: 88px;
+    margin-top: 26px;
+}
+
+#headerWrap button {
+    width: 120px;
+    height: 48px;
+    border: none;
+    font-family: "Chewy", system-ui;
+    color: #F14557;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    border-radius: 4px;
+    margin: 48px 0 0 45px;
+}
+
+#iconsRight {
+    width: fit-content;
+}
+
+@media screen and (min-width: 768px) {
+    #iconRight, #iconsLeft {
+        grid-row: 1/1;
+    }
+    #iconsLeft, #headerWrap div:first-child {
+        margin-top: 40px;
+    }
+    
+    #headerWrap button {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #headerWrap button, #logo, #iconsLeft {
+        grid-row: 1/1;
+    }
+    #iconsLeft, #headerWrap div:first-child {
+        margin-top: 40px;
+    }
+    
+    #headerWrap button {
+        font-size: 18px;
+    }
+}
